@@ -640,6 +640,8 @@
       <button class="pacote-tab" data-tab="cha">Chá Revelação</button>
       <button class="pacote-tab" data-tab="filmagem15">Filmagem 15 Anos</button>
       <button class="pacote-tab" data-tab="ensaio15">Ensaio 15 Anos</button>
+      <button class="pacote-tab" data-tab="mensal">Pacotes Mensais</button>
+      <button class="pacote-tab" data-tab="edicao">Só Edição</button>
     </div>
 
     <div class="carousel-wrap">
@@ -834,6 +836,83 @@
         <div class="placeholder-note">// Todos os pacotes são pensados para contar a personalidade da debutante, registrando essa fase com um vídeo cinematográfico e imagens cheias de emoção 🩷📹</div>
       </div>
 
+      <div class="pacote-panel" id="panel-mensal">
+        <div class="pacote-cards">
+          <div class="pacote-card">
+            <div class="pacote-name">Essencial</div>
+            <div class="pacote-duracao">Captação + edição · plano mensal</div>
+            <div class="pacote-preco">R$1.200</div>
+            <ul class="pacote-list">
+              <li>4 vídeos por mês (institucional, depoimento, reels)</li>
+              <li>1 diária de captação incluída</li>
+              <li>Edição básica + trilha sonora licenciada</li>
+            </ul>
+            <a href="#contato" class="pacote-cta">Quero esse pacote</a>
+          </div>
+          <div class="pacote-card destaque">
+            <div class="pacote-badge">Mais escolhido</div>
+            <div class="pacote-name">Profissional</div>
+            <div class="pacote-duracao">Captação + edição · plano mensal</div>
+            <div class="pacote-preco">R$2.500</div>
+            <ul class="pacote-list">
+              <li>8 vídeos por mês (institucional, bastidores, depoimento, reels corporativo)</li>
+              <li>2 diárias de captação</li>
+              <li>Roteiro + edição + motion graphics básico (logo / transições / lower thirds / legendas dinâmicas)</li>
+            </ul>
+            <a href="#contato" class="pacote-cta">Quero esse pacote</a>
+          </div>
+          <div class="pacote-card">
+            <div class="pacote-name">Premium / Corporativo</div>
+            <div class="pacote-duracao">Captação + edição · plano mensal</div>
+            <div class="pacote-preco">R$4.000</div>
+            <ul class="pacote-list">
+              <li>10-12 vídeos por mês (incluindo LinkedIn e uso interno)</li>
+              <li>2 diárias (se necessário, uma 3ª diária)</li>
+              <li>Estratégia de conteúdo + calendário mensal</li>
+              <li>Reunião de alinhamento no início do mês</li>
+              <li>Motion avançado, múltiplos formatos</li>
+              <li>2 rodadas de ajuste por vídeo</li>
+            </ul>
+            <a href="#contato" class="pacote-cta">Quero esse pacote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pacote-panel" id="panel-edicao">
+        <div class="pacote-cards">
+          <div class="pacote-card">
+            <div class="pacote-name">4 Vídeos</div>
+            <div class="pacote-duracao">Cliente manda o material bruto</div>
+            <div class="pacote-preco">A partir de<br>R$150</div>
+            <ul class="pacote-list">
+              <li>Vídeos de até 2 minutos</li>
+              <li><strong>Edição básica</strong> — corte estratégico + cor básica + trilha sonora</li>
+            </ul>
+            <a href="#contato" class="pacote-cta">Quero esse pacote</a>
+          </div>
+          <div class="pacote-card destaque">
+            <div class="pacote-badge">Mais escolhido</div>
+            <div class="pacote-name">8 Vídeos</div>
+            <div class="pacote-duracao">Cliente manda o material bruto</div>
+            <div class="pacote-preco">A partir de<br>R$150</div>
+            <ul class="pacote-list">
+              <li><strong>Edição intermediária</strong> — corte estratégico + cor avançada + legendas + trilha sonora</li>
+            </ul>
+            <a href="#contato" class="pacote-cta">Quero esse pacote</a>
+          </div>
+          <div class="pacote-card">
+            <div class="pacote-name">12 Vídeos</div>
+            <div class="pacote-duracao">Cliente manda o material bruto</div>
+            <div class="pacote-preco">A partir de<br>R$150</div>
+            <ul class="pacote-list">
+              <li><strong>Edição avançada / motion</strong> — corte estratégico + motion graphics + cor avançada + sound effects + música</li>
+            </ul>
+            <a href="#contato" class="pacote-cta">Quero esse pacote</a>
+          </div>
+        </div>
+        <div class="placeholder-note">// Valor "a partir de R$150" — confirmar com a Giovanna se é por vídeo ou pacote fechado.</div>
+      </div>
+
     </div>
     </div>
   </div>
@@ -879,6 +958,8 @@
     cha: document.getElementById('panel-cha'),
     filmagem15: document.getElementById('panel-filmagem15'),
     ensaio15: document.getElementById('panel-ensaio15'),
+    mensal: document.getElementById('panel-mensal'),
+    edicao: document.getElementById('panel-edicao'),
   };
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
